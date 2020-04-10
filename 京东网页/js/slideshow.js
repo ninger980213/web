@@ -28,34 +28,14 @@
          var everyStep =(end-start)/maxStep;
          var time = setInterval(function(){
             step++;
+            console.log(step);
              outer.scrollLeft=outer.scrollLeft+everyStep;
              if(step==maxStep){
                 clearInterval(time);
              }
          },50)
      }
-    // function changeBgcolor(){
-    //     for(var i=0;i<btns.length;i++){
-    //         btns[i].style.background = "#ffffff";
-    //     }
-    //     btns[num].style.background = "red";
-    // }
-    // for(var i =0;i<btns.length;i++){
-    //     btns[i].onclick = function(){
-    //         clearInterval(timerAuto);
-            
-    //         for(var j=0;j<=btns.length;j++){
-    //             if(this==btns[j]){
-                    
-    //                 num = j;
-    //                 changeBgcolor();
-
-    //                 move(outer.scrollLeft,600*j);
-    //             }
-    //         }
-    //         clock();
-    //     }
-    // }
+   
     rightBtn.onclick= function(){
 
         clearInterval(timerAuto);
